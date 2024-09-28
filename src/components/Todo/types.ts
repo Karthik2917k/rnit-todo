@@ -8,5 +8,5 @@ export interface PostTypes {
 export interface DelteTodoProps {
   todo: PostTypes | null;
   idDeleteModalOpen: boolean;
-  handleCloseDeleteModal: () => void;
+  handleCloseDeleteModal: (val:boolean|null) => void;
 }

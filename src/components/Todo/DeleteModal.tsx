@@ -25,7 +25,7 @@ const DeleteModal = (props: DelteTodoProps) => {
         {todo?.id || "N/A"} - {todo?.title || "N/A"}
       </h1>
       <div>
-        <button onClick={handleCloseDeleteModal}>Cancel</button>
+        <button onClick={() => handleCloseDeleteModal(null)}>Cancel</button>
         <button onClick={() => deleteTodo(todo?.id || null)}>Delete</button>
       </div>
     </div>
